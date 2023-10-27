@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="406dp"
+        android:layout_height="36dp"
+        android:text="Skaičiuotuvas"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    />
+
+    <Button
+        android:id="@+id/btnplius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="163dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnminus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="163dp" />
+
+    <Button
+        android:id="@+id/btndivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="199dp"
+        tools:layout_editor_absoluteY="163dp" />
+
+    <Button
+        android:id="@+id/btnvienas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="320dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnmultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="163dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btndu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="320dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btntrys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        tools:layout_editor_absoluteX="266dp"
+        tools:layout_editor_absoluteY="320dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnketuri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="407dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnpenki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="407dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnsesi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        tools:layout_editor_absoluteX="271dp"
+        tools:layout_editor_absoluteY="407dp"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/btnseptyni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="490dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnastuoni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="490dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnsevyni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        tools:layout_editor_absoluteX="271dp"
+        tools:layout_editor_absoluteY="490dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewetekstas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rezultatas:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="574dp"
+        tools:ignore="MissingConstraints" />
+    <?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/TextViewrezultatas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="54dp"
+            android:gravity="end"
+            android:text="0"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/btnlygu"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="111dp"
+            android:layout_marginTop="232dp"
+            android:layout_marginEnd="138dp"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="233dp"
+            android:layout_marginEnd="136dp"
+            android:onClick="onClearClick"
+            android:text="C" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
