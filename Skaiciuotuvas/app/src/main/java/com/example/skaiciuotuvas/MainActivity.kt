@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
             "*" -> operand1 * operand2
             "/" -> {
                 if (operand2 == 0.0) {
-                    Double.NaN // Handle division by zero
+                    Double.NaN
                 } else operand1 / operand2
             }
 
